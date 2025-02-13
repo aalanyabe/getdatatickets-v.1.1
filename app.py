@@ -9,7 +9,7 @@ load_dotenv(".env")
 app = Flask(__name__)
 
 uri = os.getenv("MONGO_URI")
-port = os.getenv("PORT")
+# port = os.getenv("PORT")
 
 #create a new cliente and conect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
